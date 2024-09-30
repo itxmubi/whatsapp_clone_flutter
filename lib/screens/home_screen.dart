@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/screens/all_chats.dart';
 
+import 'calls_screen.dart';
 import 'status_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -15,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> pages = [
     const AllChatsScreen(),
     const StatusScreen(),
-    const AllChatsScreen(),
+    const CallScreen(),
     const AllChatsScreen(),
   ];
   @override
@@ -41,8 +42,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             BottomNavigationBarItem(icon: Icon(Icons.home), label: "Updates"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.home), label: "Communities"),
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Calls"),
+                icon: Icon(Icons.people_alt_rounded), label: "Communities"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.call_outlined), label: "Calls"),
           ]),
     );
   }

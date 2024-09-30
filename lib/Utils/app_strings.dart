@@ -8,4 +8,5 @@ class AppStrings {
   String channels = "Channels";
   String explore = "Explore";
   String helloTHisIsMessage = "Hello this is message";
+  String call = "Call";
 }

@@ -86,11 +86,11 @@ class _AllChatsScreenState extends State<AllChatsScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.green,
         onPressed: () {},
-        child: const SizedBox(
-          height: 10,
-          width: 10,
-          child: Icon(Icons.access_alarm_outlined),
+        child: const Icon(
+          Icons.chat,
+          color: Colors.white,
         ),
       ),
     );
